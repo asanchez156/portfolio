@@ -1,59 +1,74 @@
-# Portfolio
+# Professional Portfolio & Interactive Resume
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+A modern, high-performance professional portfolio and interactive resume built with **Angular 21**. Designed for developers, featuring multi-language support, theme customization, and advanced print optimization.
 
-## Development server
+## 🚀 Live Demo
 
-To start a local development server, run:
+[View Live Portfolio](https://asanchez156.github.io/portfolio/)
+
+## ✨ Key Features
+
+- **🌍 Multi-language Support**: Seamlessly switch between **Spanish** and **English**.
+- **🌓 Theme System**: Full support for **Dark Mode** and **Light Mode** with smooth transitions.
+- **📄 Print-Ready**: Aggressively optimized CSS for printing (Ctrl+P). Generates a clean, professional PDF CV.
+- **⏳ Chronological Timeline**: Unified design for both Professional Experience and Education sections.
+- **📱 Fully Responsive**: Optimized for all devices, from mobile phones to large desktop monitors.
+- **⚡ High Performance**: Built with Angular's latest features for fast loading and smooth animations.
+- **🤖 AI-Focused Content**: Highlights specialized experience in AI Agents (LangChain, CrewAI) and AI-powered automation.
+
+## 🛠️ Technologies Used
+
+- **Framework**: Angular 21
+- **Styling**: SCSS (Sass) with CSS Variables
+- **Animations**: Angular Animations
+- **Deployment**: GitHub Pages
+- **Icons**: Emoji-based & Custom CSS
+
+## 💻 Local Development
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/asanchez156/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm start
+   ```
+   Navigate to `http://localhost:4200/`.
+
+## 📦 Build & Deployment
+
+### Production Build
+
+To generate a standard production build:
 
 ```bash
-ng serve
+npm run build:prod
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### GitHub Pages Deployment
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The project is pre-configured for GitHub Pages. To deploy:
 
 ```bash
-ng generate component component-name
+npm run deploy
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This script will:
 
-```bash
-ng generate --help
-```
+1. Compile the app with the correct `base-href`.
+2. Create a `404.html` for SPA routing support.
+3. Push the `dist` folder to the `gh-pages` branch.
 
-## Building
+## 📄 License
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is for personal use as a professional portfolio.
