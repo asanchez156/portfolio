@@ -1,0 +1,29 @@
+<section class="contact" @fadeUp>
+  <h2>{{ languageService.currentLanguage() === 'es' ? 'Contacto' : 'Contact' }}</h2>
+
+  <div class="contact-info">
+    <a [href]="'mailto:' + languageService.data().personal.email" class="contact-item">
+      📧 {{ languageService.data().personal.email }}
+    </a>
+    <a [href]="'https://twitter.com/' + languageService.data().personal.handle" target="_blank" class="contact-item">
+      🐦 {{ languageService.data().personal.twitter }}
+    </a>
+    <a [href]="languageService.data().personal.linkedin" target="_blank" class="contact-item">
+      🔗 {{languageService.data().personal.linkedin.split('/')[4]}}
+    </a>
+    <a [href]="languageService.data().personal.remote.url" target="_blank" class="contact-item">
+      📍 {{ languageService.data().personal.remote.text }}
+    </a>
+  </div>
+
+  <div class="languages">
+    <h3>{{ languageService.currentLanguage() === 'es' ? 'Idiomas' : 'Languages' }}</h3>
+    <div class="language-list">
+      <div class="language-item" *ngFor="let lang of languageService.data().personal.languages">
+        <strong>{{ lang.name }}</strong>
+        <span>{{ lang.level }}</span>
+        <span *ngIf="lang.details" class="details">{{ lang.details }}</span>
+      </div>
+    </div>
+  </div>
+</section>

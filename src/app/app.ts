@@ -1,11 +1,36 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ThemeService } from './theme.service';
+import { LanguageService } from './language.service';
+import { Hero } from './sections/hero/hero';
+import { Experience } from './sections/experience/experience';
+import { Skills } from './sections/skills/skills';
+import { Contact } from './sections/contact/contact';
+import { Education } from './sections/education/education';
 
 @Component({
   selector: 'app-root',
-  imports: [],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
+  imports: [CommonModule, Hero, Experience, Skills, Contact, Education]
 })
 export class App {
-  protected readonly title = signal('portfolio');
+  theme = inject(ThemeService);
+  language = inject(LanguageService);
+  languageService = inject(LanguageService);
+  showStickyHeader = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Show sticky header when scrolled past hero section (approximately 100vh)
+    this.showStickyHeader = window.scrollY > window.innerHeight * 0.8;
+  }
+
+  toggleTheme() {
+    this.theme.toggle();
+  }
+
+  print() {
+    window.print();
+  }
 }

@@ -64,6 +64,14 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": [
+              "asanchez.guretxea.duckdns.org",
+              "localhost",
+              "127.0.0.1",
+              "::1"
+            ]
+          },
           "configurations": {
             "production": {
               "buildTarget": "portfolio:build:production"
