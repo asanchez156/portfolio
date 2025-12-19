@@ -4,13 +4,25 @@
   "configurations": [
     {
       "name": "npm run start:host",
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "run",
         "start:host"
+      ],
+      "runtimeVersion": "22.12.0"
+    },
+    {
+      "name": "npm run deploy",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "deploy"
       ],
       "runtimeVersion": "22.12.0"
     }
