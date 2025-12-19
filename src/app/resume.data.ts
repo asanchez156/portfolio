@@ -5,8 +5,8 @@ export interface ResumeData {
     summary: string;
     email: string;
     handle: string;
-    twitter: string;
     linkedin: string;
+    github: string;
     remote: { text: string; url: string };
     languages: { name: string; level: string; details?: string }[];
   };
@@ -33,8 +33,8 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       summary: 'Node.js · Angular · Kubernetes · Docker · CI/CD · Cloud · IA aplicada',
       email: 'asanchezed@gmail.com',
       handle: 'asanchezed',
-      twitter: '@asanchez156',
       linkedin: 'https://www.linkedin.com/in/asanchezed/',
+      github: 'https://github.com/asanchez156',
       remote: { text: '100% Remoto', url: 'https://www.google.com/maps/place/Donostia-San+Sebastian' },
       languages: [
         { name: 'Español', level: 'Nivel: C2' },
@@ -162,8 +162,8 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       summary: 'Node.js · Angular · Kubernetes · Docker · CI/CD · Cloud · Applied AI',
       email: 'asanchezed@gmail.com',
       handle: 'asanchezed',
-      twitter: '@asanchez156',
       linkedin: 'https://www.linkedin.com/in/asanchezed/',
+      github: 'https://github.com/asanchez156',
       remote: { text: '100% Remote', url: 'https://www.google.com/maps/place/Donostia-San+Sebastian' },
       languages: [
         { name: 'Spanish', level: 'Level: C2' },
