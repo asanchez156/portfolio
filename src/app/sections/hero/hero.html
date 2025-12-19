@@ -1,8 +1,17 @@
 <section class="hero" @fadeUp>
-  <h1>{{ languageService.data().personal.name }}</h1>
-  <h2>{{ languageService.data().personal.role }}</h2>
-  <p>
-    {{ languageService.data().personal.summary }}
-  </p>
+  <div class="hero-content">
+    <div class="hero-image">
+      <div class="image-wrapper">
+        <img src="assets/images/cv.png" alt="CV Image" />
+      </div>
+    </div>
+    <div class="hero-text">
+      <h1>{{ languageService.data().personal.name }}</h1>
+      <h2>{{ languageService.data().personal.role }}</h2>
+      <p>
+        {{ languageService.data().personal.summary }}
+      </p>
+    </div>
+  </div>
 </section>
 
